@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.course.model">
+
+    <!-- 登陆接口case -->
+    <select id="loginCase" parameterType="Integer" resultType="com.course.model.LoginModel">
+        select * from loginCase
+        where id = #{id};
+    </select>
+
+    <!-- 添加用户接口case -->
+    <select id="addUserCase" parameterType="Integer" resultType="com.course.model.AddUserModel">
+        select * from addUserCase where id = #{id};
+    </select>
+
+    <!-- 添加用户接口 -->
+    <select id="addUser" resultType="com.course.model.UserModel">
+        select * from user where
+        userName = #{userName}
+        and password=#{password}
+        and sex=#{sex}
+        and age=#{age}
+        and permission=#{permission}
+        and isDelete=#{isDelete};
+    </select>
+
+    <!-- 获取用户列表case -->
+    <select id="getUserListCase" parameterType="Integer" resultType="com.course.model.GetUserListModel">
+        select * from getUserListCase where id = #{id};
+    </select>
+
+    <!-- 获取用户列表中每个用户的信息 -->
+    <select id="getUserList" parameterType="com.course.model.GetUserListModel" resultType="com.course.model.UserModel">
+        select * from user
+        <trim prefix="WHERE" prefixOverrides="and">
+            <if test="null != userName and '' !=userName">
+                AND userName=#{userName}
+            </if>
+            <if test="sex >= 1">
+                AND sex=#{sex}
+            </if>
+            <if test="age > 0">
+                AND age=#{age}
+            </if>
+
+        </trim>
+        ;
+    </select>
+
+    <!--获取用户信息case-->
+    <select id="getUserInfoCase" parameterType="Integer" resultType="com.course.model.GetUserInfoModel">
+        <!-- SQL语句 -->
+        select * from getUserInfoCase where id=#{id};
+    </select>
+
+    <!--  #{id}是一个变量，该变量的名称是id，可以为其随便起名。其值是java代码调用这个select映射器时传入的。  -->
+    <select id="getUserInfo" resultType="com.course.model.UserModel">
+        select * from user where id = #{id};
+    </select>
+    
+    <!-- 更新用户信息 -->
+    <select id="updateUserInfoCase" resultType="com.course.model.UpdateUserInfoModel">
+        select * from updateUserInfoCase where id = #{id};
+    </select>
+
+    <select id="getUpdateUserInfo" resultType="com.course.model.UserModel">
+        select * from user
+        <trim prefix="WHERE" prefixOverrides="and">
+            <if test="null != userName and '' != userName">
+                AND userName=#{userName}
+            </if>
+            <if test="sex == 1 or sex == 2">
+                AND sex=#{sex}
+            </if>
+            <if test="age > 0">
+                AND age=#{age}
+            </if>
+            <if test="permission == 1 or permission == 2">
+                AND permission=#{permission}
+            </if>
+            <if test="isDelete == 2 or isDelete == 1">
+                AND isDelete=#{isDelete}
+            </if>
+        </trim>
+    </select>
+
+</mapper>

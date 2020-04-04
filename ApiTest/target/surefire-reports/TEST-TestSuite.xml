@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="10.234" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="E:\Code\Java\IDEA projects\APIAutoTestJenkins\ApiTest\target\test-classes;E:\Code\Java\IDEA projects\APIAutoTestJenkins\ApiTest\target\classes;D:\Tools\apache-maven-3.6.3\repository\org\apache\httpcomponents\httpclient\4.5.9\httpclient-4.5.9.jar;D:\Tools\apache-maven-3.6.3\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar;D:\Tools\apache-maven-3.6.3\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Tools\apache-maven-3.6.3\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\Tools\apache-maven-3.6.3\repository\org\json\json\20190722\json-20190722.jar;D:\Tools\apache-maven-3.6.3\repository\org\mybatis\mybatis\3.5.4\mybatis-3.5.4.jar;D:\Tools\apache-maven-3.6.3\repository\mysql\mysql-connector-java\8.0.19\mysql-connector-java-8.0.19.jar;D:\Tools\apache-maven-3.6.3\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;D:\Tools\apache-maven-3.6.3\repository\org\projectlombok\lombok\1.18.8\lombok-1.18.8.jar;D:\Tools\apache-maven-3.6.3\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;D:\Tools\apache-maven-3.6.3\repository\org\apache\logging\log4j\log4j-core\2.12.1\log4j-core-2.12.1.jar;D:\Tools\apache-maven-3.6.3\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;D:\Tools\apache-maven-3.6.3\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;D:\Tools\apache-maven-3.6.3\repository\com\google\inject\guice\3.0\guice-3.0.jar;D:\Tools\apache-maven-3.6.3\repository\javax\inject\javax.inject\1\javax.inject-1.jar;D:\Tools\apache-maven-3.6.3\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Tools\apache-maven-3.6.3\repository\velocity\velocity\1.4\velocity-1.4.jar;D:\Tools\apache-maven-3.6.3\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;D:\Tools\apache-maven-3.6.3\repository\org\testng\testng\7.0.0\testng-7.0.0.jar;D:\Tools\apache-maven-3.6.3\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="D:\Tools\jdk\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Hahaha\AppData\Local\Temp\surefire3482699851204604805\surefirebooter6015616957331893000.jar C:\Users\Hahaha\AppData\Local\Temp\surefire3482699851204604805 2020-04-04T23-18-56_065-jvmRun1 surefire5075217622516086298tmp surefire_05093714917633555052tmp"/>
+    <property name="surefire.test.class.path" value="E:\Code\Java\IDEA projects\APIAutoTestJenkins\ApiTest\target\test-classes;E:\Code\Java\IDEA projects\APIAutoTestJenkins\ApiTest\target\classes;D:\Tools\apache-maven-3.6.3\repository\org\apache\httpcomponents\httpclient\4.5.9\httpclient-4.5.9.jar;D:\Tools\apache-maven-3.6.3\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar;D:\Tools\apache-maven-3.6.3\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;D:\Tools\apache-maven-3.6.3\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;D:\Tools\apache-maven-3.6.3\repository\org\json\json\20190722\json-20190722.jar;D:\Tools\apache-maven-3.6.3\repository\org\mybatis\mybatis\3.5.4\mybatis-3.5.4.jar;D:\Tools\apache-maven-3.6.3\repository\mysql\mysql-connector-java\8.0.19\mysql-connector-java-8.0.19.jar;D:\Tools\apache-maven-3.6.3\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;D:\Tools\apache-maven-3.6.3\repository\org\projectlombok\lombok\1.18.8\lombok-1.18.8.jar;D:\Tools\apache-maven-3.6.3\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;D:\Tools\apache-maven-3.6.3\repository\org\apache\logging\log4j\log4j-core\2.12.1\log4j-core-2.12.1.jar;D:\Tools\apache-maven-3.6.3\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;D:\Tools\apache-maven-3.6.3\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;D:\Tools\apache-maven-3.6.3\repository\com\google\inject\guice\3.0\guice-3.0.jar;D:\Tools\apache-maven-3.6.3\repository\javax\inject\javax.inject\1\javax.inject-1.jar;D:\Tools\apache-maven-3.6.3\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Tools\apache-maven-3.6.3\repository\velocity\velocity\1.4\velocity-1.4.jar;D:\Tools\apache-maven-3.6.3\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;D:\Tools\apache-maven-3.6.3\repository\org\testng\testng\7.0.0\testng-7.0.0.jar;D:\Tools\apache-maven-3.6.3\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Hahaha"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="D:\Tools\jdk\jre"/>
+    <property name="basedir" value="E:\Code\Java\IDEA projects\APIAutoTestJenkins\ApiTest"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Hahaha\AppData\Local\Temp\surefire3482699851204604805\surefirebooter6015616957331893000.jar"/>
+    <property name="sun.boot.class.path" value="D:\Tools\jdk\jre\lib\resources.jar;D:\Tools\jdk\jre\lib\rt.jar;D:\Tools\jdk\jre\lib\sunrsasign.jar;D:\Tools\jdk\jre\lib\jsse.jar;D:\Tools\jdk\jre\lib\jce.jar;D:\Tools\jdk\jre\lib\charsets.jar;D:\Tools\jdk\jre\lib\jfr.jar;D:\Tools\jdk\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_171-b11"/>
+    <property name="user.name" value="Hahaha"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="D:\Tools\jdk\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Tools\apache-maven-3.6.3\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Hahaha\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_171"/>
+    <property name="user.dir" value="E:\Code\Java\IDEA projects\APIAutoTestJenkins\ApiTest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\Tools\jdk\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Tools\Git\mingw64\bin;D:\Tools\Git\usr\bin;C:\Users\Hahaha\bin;C:\Program Files (x86)\HP\NV\lib\shunra\vcat;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;D:\Tools\Sublime Text 3;D:\Tools\jdk\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Tools\Android\Sdk\tools;D:\Tools\Android\Sdk\platform-tools;D:\Tools\Nodejs;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Tools\selenium;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;D:\Tools\loadrunner12.53\strawberry-perl\perl\bin;C:\Program Files (x86)\HP\NV\lib\thirdparty\safenet\LDK\7.0;C:\Program Files (x86)\HP\NV\lib\shunra\snv;D:\Tools\apache-maven-3.6.3\bin;D:\Tools\Git\cmd;C:\Users\Hahaha\AppData\Local\Microsoft\WindowsApps;D:\Tools\AppServ\Apache24\bin;D:\Tools\AppServ\php5;D:\Tools\AppServ\MySQL\bin;C:\Users\Hahaha\AppData\Local\atom\bin;C:\Users\Hahaha\AppData\Roaming\npm;C:\Users\Hahaha\AppData\Local\Microsoft\WindowsApps;D:\Tools\Fiddler;D:\Tools\IntelliJ IDEA 2019.3\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.171-b11"/>
+    <property name="java.ext.dirs" value="D:\Tools\jdk\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="loginTrue" classname="com.course.cases.LoginTest" time="0.42"/>
+  <testcase name="loginFalse" classname="com.course.cases.LoginTest" time="0.037"/>
+  <testcase name="addUser" classname="com.course.cases.AddUserTest" time="2.14"/>
+  <testcase name="getUserListInfo" classname="com.course.cases.GetUserInfoListTest" time="2.134"/>
+  <testcase name="getUserInfo" classname="com.course.cases.GetUserInfoTest" time="1.559"/>
+  <testcase name="updateUserInfo" classname="com.course.cases.UpdateUserInfoTest" time="2.277"/>
+</testsuite>

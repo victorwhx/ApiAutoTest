@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.course">
+    <!-- 登录接口sql -->
+    <select id="login" resultType="Integer">
+        SELECT COUNT(*) FROM user
+        WHERE userName = #{userName}
+        AND password = #{password}
+    </select>
+
+    <!-- 添加用户接口sql -->
+    <insert id="addUser">
+        INSERT INTO user
+        (userName, password, age, sex, permission, isDelete)
+        VALUES
+        (#{userName}, #{password}, #{age}, #{sex}, #{permission}, #{isDelete})
+    </insert>
+
+    <!-- 获取用户信息sql -->
+    <select id="getUserInfo" resultType="com.course.model.User">
+        SELECT * FROM user
+        <trim prefix="WHERE" prefixOverrides="AND">
+            <if test="id > 0">
+                AND id = #{id}
+            </if>
+            <if test="null != userName and '' != userName">
+                AND userName = #{userName}
+            </if>
+            <if test="null != password and '' != password">
+                AND passwrod = #{passwrod}
+            </if>
+            <if test="sex == 2 or sex == 1">
+                AND sex=#{sex}
+            </if>
+            <if test="age > 0">
+                AND age=#{age}
+            </if>
+            <if test="permission == 1 or permission == 2">
+                AND permission=#{permission}
+            </if>
+            <if test="isDelete == 2 or isDelete == 1">
+                AND isDelete=#{isDelete}
+            </if>
+        </trim>
+    </select>
+
+    <!--  更新或删除用户信息  -->
+    <update id="updateUserInfo">
+        UPDATE user
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="null != userName and '' != userName">
+                userName=#{userName},
+            </if>
+            <if test="sex == 2 or sex == 1">
+                sex=#{sex},
+            </if>
+            <if test="age > 0">
+                age=#{age},
+            </if>
+            <if test="permission == 2 or permission == 1">
+                permission=#{permission},
+            </if>
+            <if test="isDelete == 2 or isDelete == 1">
+                isDelete=#{isDelete},
+            </if>
+        </trim>
+        WHERE id = #{id}
+    </update>
+</mapper>

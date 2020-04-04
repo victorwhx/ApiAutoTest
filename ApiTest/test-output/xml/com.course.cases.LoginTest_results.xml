@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="用户管理系统测试用例"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.661">
+  <properties />
+  
+  
+            <testcase name="loginTrue" time="0.613" classname="com.course.cases.LoginTest" />
+                <testcase name="loginFalse" time="0.048" classname="com.course.cases.LoginTest" />
+      
+</testsuite>
