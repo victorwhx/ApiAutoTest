@@ -16,7 +16,8 @@ public class TestCaseReport implements IReporter {
     private Date date = new Date(currentTime);
     private String reportdate = formatter.format(date);
 
-    private String path = System.getProperty("user.dir")+File.separator+"test-report"+File.separator+reportdate+"report.html";
+//    private String path = System.getProperty("user.dir")+File.separator+"test-report"+File.separator+reportdate+"report.html";
+private String path = System.getProperty("user.dir")+File.separator+"test-report"+File.separator+"report.html";
 
     private String templatePath = System.getProperty("user.dir")+File.separator+"template.html";
 
